@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #131313;
+  }
+  
+  .rating-container {
+    transform: rotateY(180deg);
+  }
+  
+  input {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    color: #444;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  label:not(:last-child) {
+    margin-right: 5px;
+  }
+  
+  input:checked ~ label,
+  input:hover ~ label {
+    color: #ff7a00;
+  }
+  
+  input:hover ~ label {
+    transform: scale(1.2) rotate(-30deg);
+  }
+  
